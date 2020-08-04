@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Hoàng Phi Mobile</string>
+    // message
+    <string name="no_network">Cảnh báo</string>
+    <string name="no_server">Thông báo</string>
+    <string name="no_network_message">Cần kết nối 3G/Wifi để sử dụng ứng dụng. Bấm OK để thoát</string>
+    <string name="no_server_message">Máy chủ đang bảo trì vui lòng quay lại sau . Bấm OK để thoát</string>
+    <string name="text_view_more">Xem thêm</string>
+
+    // nav menu
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_news">Tin tức</string>
+    <string name="nav_search">Tra cứu</string>
+    <string name="nav_profile">Thông tin</string>
+
+    <string name="toolbar_banner_activity">Chương trình khuyến mại</string>
+
+    <!-- Top Product Fragment -->
+    <string name="toolbar_last_product_activity">Top 15 điện thoại mới nhất</string>
+    <string name="text_view_top_product">SẢN PHẨM MỚI NHẤT</string>
+
+    <!-- HOT Product Fragment -->
+    <string name="text_view_hot_product">SẢN PHẨM BÁN CHẠY</string>
+
+    <!-- Offer Product Fragment -->
+    <string name="text_view_offer_product">SẢN PHẨM ĐỀ XUẤT</string>
+
+    <!-- Brand Activity -->
+    <string name="text_view_phone">Điện thoại</string>
+
+    <!-- Product Activity -->
+    <string name="text_view_color">Màu sắc: </string>
+    <string name="text_view_config">Cấu hình</string>
+    <string name="text_view_screen">Màn hình: </string>
+    <string name="text_view_os">Hệ điều hành: </string>
+    <string name="text_view_cam_back">Camera sau: </string>
+    <string name="text_view_cam_front">Camera trước: </string>
+    <string name="text_view_battery">Dung lượng pin: </string>
+    <string name="text_view_description">Đặc điểm nổi bật</string>
+    <string name="btn_order_product">Đặt hàng</string>
+
+    <!-- Order Activity -->
+    <string name="toolbar_order_activity">Xác nhận thanh toán</string>
+
+    <string name="text_view_customer_info">Thông tin khách hàng</string>
+    <string name="text_view_total_pay">Tổng: </string>
+
+    <string name="btn_back_home">Trang chủ</string>
+    <string name="btn_order_confirm">Xác nhận đặt hàng</string>
+
+    <string name="order_success">Đặt hàng thành công</string>
+    <string name="thank_you">Chúng tôi sẽ liên hệ lại để xác nhận đơn hàng.</string>
+    <string name="order_id">Mã đơn hàng : </string>
+    <string name="contact_back">Khi cần hỗ trợ liên hệ hotline: 086.760.4321</string>
+
+    <string name="require_name">Tên là trường bắt buộc</string>
+    <string name="require_phone">Số điện thoại là trường bắt buộc</string>
+    <string name="require_address">Địa chỉ là trường bắt buộc</string>
+
+    <string name="validate_phone">Số điện thoại không hợp lệ</string>
+    <string name="validate_email">Email dạng: name@domain.com</string>
+    <string name="validate_address">Địa chỉ không hợp lệ</string>
+
+    <string name="hint_order_activity_name">Họ và tên</string>
+    <string name="hint_order_activity_phone">Số điện thoại</string>
+    <string name="hint_order_activity_email">Địa chỉ Email (Không bắt buộc)</string>
+    <string name="hint_order_activity_address">Địa chỉ nhận hàng</string>
+    <string name="hint_order_activity_notes">Ghi chú (Không bắt buộc)</string>
+    <string name="title_activity_contact">Map</string>
+
+    // Fragment Last New
+    <string name="text_view_last_news">BÀI VIẾT MỚI NHẤT</string>
+
+    // Fragment Top New
+    <string name="text_view_top_news">BÀI VIẾT HOT NHẤT</string>
+    <string name="empty_product">Tạm hết hàng</string>
+
+
+</resources>

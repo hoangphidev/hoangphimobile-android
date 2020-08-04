@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_slide"
+            android:name="tech.hoangphi.store.Fragments.News.SlideNewsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" />
+
+        <fragment
+            android:id="@+id/fragment_top_news"
+            android:name="tech.hoangphi.store.Fragments.News.TopNewsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <fragment
+            android:id="@+id/fragment_offer_product"
+            android:name="tech.hoangphi.store.Fragments.OfferProductFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <fragment
+            android:id="@+id/fragment_last_news"
+            android:name="tech.hoangphi.store.Fragments.News.LastNewsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+</ScrollView>

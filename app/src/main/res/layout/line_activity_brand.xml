@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorWhite"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="3dp">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linear_layout_brand_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/imv_brand_product"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <TextView
+            android:id="@+id/tv_name_brand_product"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:maxLines="2"
+            android:text="Product name"
+            android:textColor="@color/colorDark"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_brand_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:text="Product price"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

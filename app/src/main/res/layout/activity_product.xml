@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.ProductActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_product"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imv_product"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <TextView
+            android:id="@+id/tv_name_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imv_product"
+            android:text="Product name"
+            android:textColor="@color/colorDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_product"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imv_product"
+            android:text="Product price"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/label_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price_product"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imv_product"
+            android:text="@string/text_view_color"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price_product"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/label_color"
+            android:text="Red"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_color"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imv_product"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_order"
+                android:drawableRight="@drawable/ic_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/custom_button_order"
+                android:padding="10dp"
+                android:text="@string/btn_order_product"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_view_config"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_view_screen"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_screen"
+                        android:text="OLED, 6.5, Super Retina XDR"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_view_os"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_os"
+                        android:text="IOS 13"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_view_cam_back"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_back_camera"
+                        android:maxWidth="180dp"
+                        android:ellipsize="end"
+                        android:text="2 camera kép 12 MP"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_view_cam_front"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_front_camera"
+                        android:text="7 MP"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="CPU: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu"
+                        android:text="Apple A13 Bionic 6 nhân"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="RAM: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ram"
+                        android:text="4 GB"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="ROM: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_rom"
+                        android:text="512 GB"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:text="@string/text_view_battery"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_battery"
+                        android:text="3969 mAh, có sạc nhanh"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/text_view_description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="5dp"
+                android:text="Mô tả sản phẩm"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+            <fragment
+                android:id="@+id/fragment_offer_product"
+                android:name="tech.hoangphi.store.Fragments.OfferProductFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

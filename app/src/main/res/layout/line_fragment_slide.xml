@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@color/colorPrimary"
+        android:id="@+id/imv_slide"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/custom_bg_banner" />
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imv_slide">
+
+        <TextView
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:id="@+id/tv_title_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Phụ tình"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
